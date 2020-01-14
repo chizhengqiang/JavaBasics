@@ -232,3 +232,6 @@ class MyCache {
 ####  wait sleep 功能都是当前线程暂停，有什么区别？
 - wait 暂停，放开锁
 - sleep 手里还有锁
+#### 线程实现方式
+- Java多线程实现方式主要有四种：继承Thread类、实现Runnable接口、实现Callable接口通过FutureTask包装器来创建Thread线程、使用ExecutorService、Callable、Future实现有返回结果的多线程。
+- 其中前两种方式线程执行完后都没有返回值，后两种是带返回值的。
